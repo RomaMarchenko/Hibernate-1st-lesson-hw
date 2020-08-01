@@ -42,7 +42,16 @@ public class Demo {
 
         session.close();*/
 
-        Demo demo = new Demo();
-        demo.save();
+        //Demo demo = new Demo();
+        //demo.save();
+
+        Product product = new Product();
+        product.setId(101);
+        product.setName("car");
+        product.setDescription("grey");
+        product.setPrice(70);
+
+        //ProductRepository.delete(99);
+        ProductRepository.update(product);
     }
 }
