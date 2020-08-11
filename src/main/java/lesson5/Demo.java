@@ -3,7 +3,6 @@ package lesson5;
 import org.hibernate.Session;
 
 public class Demo {
-    
     public static void main(String[] args) {
         Product product = new Product();
         product.setId(101);
@@ -11,7 +10,10 @@ public class Demo {
         product.setDescription("grey");
         product.setPrice(70);
 
-        //ProductRepository.delete(99);
-        ProductRepository.update(product);
+        //ProductRepository.delete(101);
+
+        //ProductRepository.update(product);
+
+        ProductRepository.save(product);
     }
 }
